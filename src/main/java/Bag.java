@@ -97,7 +97,7 @@ public abstract class Bag {
      */
     public String popItem(){
         if (numberOfContents > 0 ){
-            String lastItem = contents[numberOfContents - 1]
+            String lastItem = contents[numberOfContents - 1];
             contents[numberOfContents - 1] = null;
             numberOfContents --;
             return lastItem;
