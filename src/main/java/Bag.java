@@ -45,6 +45,10 @@ public abstract class Bag {
         return color;
         }
 
+    public int getNumberOfContents() {
+        return numberOfContents;
+    }
+
     public void setNumberOfContents(int numberOfContents) {
         this.numberOfContents = numberOfContents;
     }
