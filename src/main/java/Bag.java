@@ -96,7 +96,14 @@ public abstract class Bag {
      * @return
      */
     public String popItem(){
-
+        if (numberOfContents > 0 ){
+            String lastItem = contents[numberOfContents - 1]
+            contents[numberOfContents - 1] = null;
+            numberOfContents --;
+            return lastItem;
+        } else {
+            return null;
+        }
     }
 
 
@@ -109,7 +116,7 @@ public abstract class Bag {
      */
     public void increaseCapacity(int n) {
         // TODO: Implement this method.
-
+        capacity += n;
     }
 
     /**
