@@ -33,6 +33,8 @@ public abstract class Bag {
     public Bag(String color, int capacity) {
         this.color = color;
         this.capacity = capacity;
+        this.numberOfContents = 0;
+        this.contents = new String[capacity];
     }
     /*
      * TODO: Create a variety of 'getter' functions.
@@ -80,10 +82,10 @@ public abstract class Bag {
             contents[numberOfContents] = item;
             numberOfContents ++;
             return true;
-        } else {
+        }
+        else {
             return false;
         }
-
     }
 
 
